@@ -64,7 +64,6 @@ dialog = Dialog()
 dialog.mode = None
 
 chatgpt = ChatGptService(token="gpt:token")
-
 app = ApplicationBuilder().token("token").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("gpt", gpt))
